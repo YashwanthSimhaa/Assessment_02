@@ -214,3 +214,6 @@ async def delete_by_id(item_id : str):
     except Exception :
         raise HTTPException(status_code=status.HTTP_404_NOT_FOUND,detail="File Not Found")   
     
+@app.get("/demo")
+async def demo():
+    pass
